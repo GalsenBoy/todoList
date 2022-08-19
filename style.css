@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+}
+.container .tape {
+  position: absolute;
+  top: 20px;
+}
+.container .tache {
+  position: absolute;
+  top: 85px;
+}/*# sourceMappingURL=style.css.map */
