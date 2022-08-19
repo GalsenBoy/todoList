@@ -4,18 +4,47 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1B2430;
+}
+
 .container {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Nunito Sans", sans-serif;
 }
 .container .tape {
   position: absolute;
-  top: 20px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.container .tape input {
+  padding: 8px 40px;
+  border: none;
+  outline: none;
+  border-bottom: 5px solid #51557E;
+  font-size: large;
+}
+.container .tape button {
+  border: none;
+  padding: 7px 10px;
+  margin-left: 1rem;
+  border-radius: 5px;
+  font-size: large;
+  cursor: pointer;
+}
+.container .tape button:hover {
+  transform: scale(0.9);
 }
 .container .tache {
   position: absolute;
-  top: 85px;
+  top: 120px;
+}
+.container .tache h1 {
+  font-weight: 300;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

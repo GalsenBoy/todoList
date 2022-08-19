@@ -4,20 +4,59 @@
     box-sizing: border-box;
 }
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #1B2430;
+}
+
 .container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 500px;
+    @include flexCenter();
+    margin-top: 100px;
+    font-family: 'Nunito Sans', sans-serif;
 
     .tape {
         position: absolute;
-        top: 20px;
+        top: 40px;
+        @include flexCenter();
+
+
+        input {
+            padding: 8px 40px;
+            border: none;
+            outline: none;
+            border-bottom: 5px solid #51557E;
+            font-size: large;
+
+        }
+
+        button {
+            border: none;
+            padding: 7px 10px;
+            margin-left: 1rem;
+            border-radius: 5px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(0.9);
+        }
     }
 
     .tache {
         position: absolute;
-        top: 85px;
+        top: 120px;
+
+        h1 {
+            font-weight: 300;
+            text-decoration: underline;
+            //color: #7278b7;
+        }
     }
 }
