@@ -47,4 +47,8 @@ body {
 .container .tache h1 {
   font-weight: 300;
   text-decoration: underline;
+}
+
+.notActif {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

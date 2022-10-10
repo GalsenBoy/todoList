@@ -1,14 +1,13 @@
-let btn = document.getElementById('btn');
+function addTask() {
 
-btn.addEventListener('click', function (e) {
-    let getValueInput = document.getElementById('input').value;
-    //console.log(getValueInput);
-    let taskValue = []
-    taskValue.unshift(getValueInput)
-    let liste = '<ul>';
-    for (const getTaskItem of taskValue) {
-        liste += `<li> ${getTaskItem} </li>`
-    }
-    liste += '</ul>'
-    document.querySelector('.tache').innerHTML += liste
-});
+    let getInputValue = document.querySelector('input').value;
+    let task = [];
+    let liste = document.createElement('li');
+    task.push(getInputValue);
+    liste.innerHTML = task;
+    document.querySelector('ul').appendChild(liste);
+}
+const btn = document.getElementById('btn');
+btn.addEventListener('click', addTask);
+
+
